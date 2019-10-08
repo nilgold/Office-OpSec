@@ -2,8 +2,8 @@
 Write to a Google Sheets document from a Twine app
 
 1. In the Google Drive of a GCP-connected account, create a new Sheets doc.
-2. **In the Sheets doc**, run File -> Import, Upload. Upload the provided "Office OpSec.xlsx." Choose "Replace spreadsheet." Click "Import data."
-3. Tools -> Script editor
+2. **In the Sheets doc**, choose File -> Import, Upload. Upload the provided "Office OpSec.xlsx." Choose "Replace spreadsheet." Click "Import data."
+3. Go to Tools -> Script editor.
 4. Over the contents of new Code.gs, paste code from provided Code.gs.
 5. CTRL+S to save. Enter an arbitrary project name. Click OK.
 6. Run -> Run function -> setup
@@ -19,7 +19,7 @@ Write to a Google Sheets document from a Twine app
 16. In the "Create Credentials" dropdown, choose "Service Account Key."
 17. In the "Service Account" dropdown, choose "New Service Account."
 18. Name the service account. Write down the service account ID e-mail address (e.g. account-name@project-name.iam.gserviceaccount.com), to be used in step 25 when sharing the Sheets doc.
-19. Choose "Key type: JSON" (The key is not be used in this config.)
+19. Choose "Key type: JSON" (The credentials are not used in this config).
 20. Click Create.
 21. At "Service account has no role," in the "Select a role" dropdown, select Project -> Editor. Click Create.
 22. The Credentials JSON file will download to browser. (The credentials are not used in this config.)
