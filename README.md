@@ -15,7 +15,7 @@
 ### Notes
 
 * Requests posted to the Sheets web app trigger a compute usage.
-* The request originates from the user's browser, and I can't guarantee that a malicious request to the sheet is impossible. The web app can be hardened by disabling accepted request types.
+* The request originates from the user's browser, and malicious requests to the sheet may be possible. Any hardening should probably begin in Code.gs.
 
 ### Configuration
 
@@ -57,4 +57,4 @@
 
 Example output:
 
-[twine-and-sheets.jpg](twine-and-sheets.jpg)
+[twine-and-sheet.jpg](twine-and-sheet.jpg)
