@@ -1,5 +1,23 @@
 # twine-sheets-app
-Write to a Google Sheets document from a Twine app
+## Write to a Google Sheets document from a Twine app
+
+### Goal
+
+* Enable a Twine story (an HTML document) to update a Google Sheets document when the user completes the interactive story. 
+
+### Configuration Summary
+
+* Steps 1-12: Create a Google Sheets doc in the Google Drive of a GCP-connected user, load and initialize a web app script, deploy the Sheets doc as a web app.
+* Steps 13-23: Configure a GCP service account to facilitate the necessary compute services.
+* Steps 24-27: Share the Sheets doc with the e-mail address associated with the service account.
+* Steps 28-35: Edit the Twine app, inserting the new Sheets web app URL.
+
+### Notes
+
+* Requests posted to the Sheets web app trigger a compute usage.
+* The request originates from the user's browser, and I can't guarantee that a malicious request to the sheet is impossible. The web app can be hardened by disabling accepted request types.
+
+### Configuration
 
 1. In the Google Drive of a GCP-connected account, create a new Sheets doc.
 2. **In the Sheets doc**, choose File -> Import, Upload. Upload the provided "Office OpSec.xlsx." Choose "Replace spreadsheet." Click "Import data."
@@ -37,3 +55,6 @@ Write to a Google Sheets document from a Twine app
 34. Close the passage edit dialog.
 35. Compile the twine app to HTML by selecting Main Menu -> Publish to File.
 
+Example output:
+
+[twine-and-sheets.jpg](twine-and-sheets.jpg)
