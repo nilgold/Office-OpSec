@@ -1,5 +1,5 @@
-# Office-OpSec
-Twine app that updates a Gsuite Sheets document
+# twine-sheets-app
+Write to a Google Sheets document from a Twine app
 
 1. In the Google Drive of a GCP-connected account, create a new Sheets doc.
 2. **In the Sheets doc**, run File -> Import, Upload. Upload the provided "Office OpSec.xlsx." Choose "Replace spreadsheet." Click "Import data."
