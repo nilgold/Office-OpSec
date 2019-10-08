@@ -57,4 +57,4 @@
 
 Example output:
 
-[twine-and-sheet.jpg](twine-and-sheet.jpg)
+![twine-and-sheet.jpg](twine-and-sheet.jpg)
