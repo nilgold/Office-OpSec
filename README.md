@@ -8,7 +8,7 @@ Write to a Google Sheets document from a Twine app
 5. CTRL+S to save. Enter an arbitrary project name. Click OK.
 6. Run -> Run function -> setup
 7. At "Authorization required," click "Review Permissions."
-8. Choose the Gsuite user account that owns the Sheets doc.
+8. Choose the user account that owns the Sheets doc.
 9. Click Allow.
 10. Publish -> Deploy as web app...
 11. Project version: New, Execute as: Me, Who has access: "Anyone, even anonymous." Click Deploy.
