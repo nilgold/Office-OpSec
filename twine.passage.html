@@ -1,0 +1,37 @@
+<script>
+  var currentDate = new Date();
+  var year = currentDate.getUTCFullYear();
+  var date = currentDate.getUTCDate();
+  var month = currentDate.getUTCMonth(); // January is 0
+  var hour = currentDate.getUTCHours();
+  var minute = currentDate.getUTCMinutes();
+  var second = currentDate.getUTCSeconds();
+  var timestamp = year + "-" + (month + 1) + "-" + date + " " + hour + ":" + minute + ":" + second;
+
+  var sendData = JSON.stringify({
+    "email": harlowe.State.variables['email'],
+    "timestamp": timestamp,
+    "score": harlowe.State.variables['score'],
+    "AntiVirus": harlowe.State.variables['AntiVirus'],
+    "PRfailure": harlowe.State.variables['PRfailure'],
+    "Password": harlowe.State.variables['Password'],
+    "Shared": harlowe.State.variables['Shared'],
+    "AccessPermissions": harlowe.State.variables['AccessPermissions'],
+    "USB": harlowe.State.variables['USB'],
+    "attachment": harlowe.State.variables['attachment'],
+    "OPSEC": harlowe.State.variables['OPSEC'],
+    "Phishing": harlowe.State.variables['Phishing'],
+    "SysPassword": harlowe.State.variables['SysPassword'],
+    "BrowserPassword": harlowe.State.variables['BrowserPassword'],
+    "VPN": harlowe.State.variables['VPN'],
+    "SystemUpdate": harlowe.State.variables['SystemUpdate'],
+    "PetName": harlowe.State.variables['PetName']
+  });
+
+  $.ajax({
+    url:"(sheets web app URL)",
+    method:"POST",
+    dataType: "json",
+    data: sendData
+  }).done(function() {});
+</script>
